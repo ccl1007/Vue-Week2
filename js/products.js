@@ -17,7 +17,7 @@ const app = {
                     //6.確定登入後調用取得後台產品的函式
                     this.getProducts();
                 }).catch((err) => {
-                    alert(err.data.message)
+                    alert(err.response.data.message)
                     //6.無法登入則回到首頁
                     window.location = 'index.html';
                 });
@@ -29,7 +29,7 @@ const app = {
                     this.products = res.data.products
                     console.log(this.products);
                 }).catch((err) => {
-                    alert(err.data.message)
+                    alert(err.response.data.message)
                 });
         },
         showProducts(item) {

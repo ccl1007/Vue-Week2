@@ -58,7 +58,7 @@
                     <td width="120" >{{item.price}}</td>
                     <td width="150">
                       
-                      <span class="text-success" v-if='item.is_enabled=1'>上架中</span>
+                      <span class="text-success" v-if='item.is_enabled===1'>上架中</span>
                       <span v-else >未上架</span>
                     </td>
     <!-- v-on綁定 -->
@@ -90,9 +90,6 @@
                     </div>
                   </div>
                 </div>
-                <template>
-                  <img src="" alt="" class="images m-2">
-                </template>
               </template>
               <p class="text-secondary" v-else>請選擇一個商品查看</p>
             </div>
